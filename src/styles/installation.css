@@ -1,0 +1,75 @@
+/* Toolbar background */
+.search-toolbar {
+  --background: var(--ion-color-light);
+}
+
+/* Row */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+}
+
+/* SEARCH WRAPPER */
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.installation-search {
+  --background: #f1f3f5;
+  --border-radius: 14px;
+  --box-shadow: none;
+  --color: var(--ion-color-dark);
+  height: 100%;
+
+  padding-inline-start: 0;
+}
+.installation-search::part(container) {
+  height: 100%;
+  align-items: center;
+}
+
+/* search input padding (icon space) */
+.installation-search::part(input) {
+  padding-right: 42px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.installation-search::part(native) {
+  height: 100%;
+}
+
+/* FILTER BUTTON (inside search) */
+.filter-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  color: var(--ion-color-medium);
+}
+
+/* ADD BUTTON – modern, not FAB */
+.add-installation-btn {
+  height: 42px;
+  width: 42px;
+  min-width: 42px;
+
+  --border-radius: 14px;
+  --padding-start: 0;
+  --padding-end: 0;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

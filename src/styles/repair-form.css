@@ -1,0 +1,140 @@
+/* repair-form.css */
+
+/* Genel sayfa ve yazı ayarları */
+ion-page {
+  --ion-background-color: #f4f5f8;
+  --ion-text-color: #222;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Header ve progress bar */
+ion-header ion-toolbar {
+  --min-height: 60px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+ion-progress-bar {
+  --progress-background: rgba(255, 255, 255, 0.3);
+  --progress-value: #ffffff;
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Listeler ve itemler */
+ion-list {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+ion-item {
+  --background: transparent;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  --border-color: #e0e0e0;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: background 0.2s ease-in-out;
+}
+
+ion-item:hover {
+  background: rgba(79, 125, 243, 0.05);
+}
+
+ion-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input, textarea ve select */
+ion-input,
+ion-textarea,
+ion-select {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --border-radius: 6px;
+  --background: #f9f9f9;
+  --border-color: #dcdcdc;
+  border: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+/* Checkbox */
+ion-checkbox {
+  --background: #4f7df3;
+  --checkmark-color: white;
+}
+
+/* Butonlar */
+ion-button {
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(79, 125, 243, 0.3);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ion-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 125, 243, 0.4);
+}
+
+ion-button.ion-color-success {
+  --background: linear-gradient(135deg, #28c76f, #20b38a);
+  --box-shadow: 0 4px 10px rgba(40, 199, 111, 0.3);
+}
+
+ion-button.ion-color-medium {
+  --background: linear-gradient(135deg, #6c757d, #a0a5ab);
+}
+
+/* Card stilizasyonu */
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 12px 0;
+}
+
+ion-card-header ion-card-title {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-card-content strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #4f7df3;
+}
+
+/* Signature pad */
+.signature-pad {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  height: 200px;
+  margin-top: 12px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Action buttons container */
+.ion-padding > ion-button {
+  margin-top: 12px;
+}
+
+/* Responsive küçük ekranlar */
+@media (max-width: 420px) {
+  ion-label {
+    font-size: 0.9rem;
+  }
+
+  ion-input,
+  ion-textarea,
+  ion-select {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,17 @@
+.status-badge::part(native) {
+  width: 100%;
+  max-width: 96px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,33 @@
+.segment-toolbar {
+  --background: var(--ion-background-color);
+  padding: 0;
+}
+
+.segment-toolbar ion-segment {
+  width: 100%;
+  padding: 6px 12px;
+
+  --background: #f1f3f5;
+  border-radius: 14px;
+}
+
+.segment-toolbar ion-segment-button {
+  --color: var(--ion-color-medium);
+  --color-checked: var(--ion-color-primary);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  min-height: 36px;
+}
+
+/* iOS */
+ion-segment.ios {
+  --indicator-color: transparent;
+}
+
+/* Android */
+ion-segment.md {
+  --indicator-color: var(--ion-color-primary);
+}
+

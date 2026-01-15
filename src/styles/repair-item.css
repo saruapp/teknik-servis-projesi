@@ -1,0 +1,77 @@
+/* WRAPPER */
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  gap: 12px;
+}
+
+/* LEFT */
+.item-left {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Title */
+.item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ion-color-dark);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Meta */
+.item-meta,
+.item-issue {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--ion-color-medium);
+  margin-top: 4px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Issue biraz daha vurgulu */
+.item-issue {
+  color: var(--ion-color-dark);
+  font-weight: 500;
+}
+
+/* RIGHT */
+.item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRIORITY PILL (Installation status ile aynı ölçüler) */
+.priority-pill {
+  font-size: 0.65rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* COLORS */
+.priority-high {
+  background: rgba(var(--ion-color-danger-rgb), 0.18);
+  color: var(--ion-color-danger);
+}
+
+.priority-medium {
+  background: rgba(var(--ion-color-warning-rgb), 0.18);
+  color: var(--ion-color-warning);
+}
+
+.priority-low {
+  background: rgba(var(--ion-color-success-rgb), 0.18);
+  color: var(--ion-color-success);
+}

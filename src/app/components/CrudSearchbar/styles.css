@@ -1,0 +1,48 @@
+/* ROOT – toolbar heightını TAM doldurur */
+.crud-search-root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 8px; /* Add space between search container and add button */
+}
+
+/* Container for searchbar and filter button */
+.crud-search-container {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
+
+/* SEARCHBAR */
+ion-searchbar.crud-search {
+  height: 100%;
+  width: 100%;
+  --background: transparent;
+  --border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+
+ion-searchbar.crud-search::part(container) {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+ion-searchbar.crud-search::part(cancel-button) {
+  display: none;
+}
+
+ion-searchbar.crud-search::part(native),
+ion-searchbar.crud-search::part(input) {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding-right: 40px; /* Space for filter button */
+  font-size: 16px;
+  padding-left: 16px;
+}
